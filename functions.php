@@ -412,4 +412,34 @@ function splotpoint_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'splotpoint_scripts' );
 
+
+# -----------------------------------------------------------------
+# login stuff
+# -----------------------------------------------------------------
+
+// Add custom logo to entry screen... because we can
+// While we are at it, use CSS to hide the back to blog and retried password links
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/site-login-logo.png);
+            padding-bottom: 30px;
+        }    
+	#backtoblog {display:none;}
+	#nav {display:none;}
+    </style>
+<?php }
+
+
+// Make logo link points to blog, not Wordpress.org Change Dat
+// -- h/t http://www.sitepoint.com/design-a-stylized-custom-wordpress-login-screen/
+
+add_filter( 'login_headerurl', 'login_link' );
+
+function login_link( $url ) {
+	return get_bloginfo( 'url' );
+}
+
 ?>
