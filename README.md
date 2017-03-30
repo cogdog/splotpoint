@@ -43,7 +43,7 @@ The new site will be pretty plain, Jane. Hang on.
 
 In this theme Wordpress `Posts` are renamed `Slides` -- create maybe 2,3 new ones. In the Post Editor, add your title, a featured image, and use the `Slide Attribute` box on the right to designate the order your slide sits in the deck (this can be edited easily later).
 
-![](images/slide-attributes.jpg.jpg "Slide Attributes")
+![](images/slide-attributes.jpg "Slide Attributes")
 
 For the body text of all slides, any headings will be center aligned by default.
 
