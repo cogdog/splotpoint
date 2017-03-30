@@ -1,0 +1,98 @@
+/*
+Theme Name: 	SPLOTpoint
+Theme URI: 		http://splot.ca
+Description: 	More modern than your grandfather's slide deck, a presentation maker powered by Wordpress
+Version: 		0.18
+Template:       intergalactic
+Author: 		CogDog
+Author URI: 	http://cogdogblog.com/
+Tags:			splot
+License: 		GNU General Public License v2.0
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html 
+
+*/
+
+
+
+@import url(../intergalactic/style.css);
+
+
+h1, h2, h3, h4, h5, h6 {text-align:center;}
+
+.site-description { font-size: 1.5em; font-weight: 900; color: rgb(165, 6, 18);}
+
+
+.hentry {
+    background: #fff;
+}
+.entry-content {
+	width:90%;
+	font-size:1.3em;
+}
+
+.entry-content-wrapper {
+    min-height: 300px;
+}
+
+.entry-footer-wrapper {border:none;}
+
+.post .entry-meta, .author-avatar, .author-bio, .entry-footer {display:none;}
+
+span.meta-nav { color: #222; font-size: 500%;}
+
+.post-navigation .nav-previous a , .post-navigation .nav-next a {font-size: xx-small; color: #fff; width:15%; max-width:200px; padding:0}
+
+
+.splotpoint-footer {
+    position: relative;
+    clear: both;
+    color: #aaa;
+    background: #111;
+}
+
+.splotpoint-footer a {
+    color: #aaa;
+}
+
+.splot-info {
+	text-align:center;
+	padding-bottom: 2em;
+	font-size: 0.7em;
+}
+
+.site-info {
+    font-size: 1.2em;
+    margin-bottom:0;
+    margin-top:0;
+    padding-top: 1em;
+}
+
+.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover {
+    opacity: 0.7;
+}
+
+img.size-big, .wp-caption.caption-big {margin-left: inherit;}
+
+.twitter-tweet-rendered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.site-title a {
+    color: #fff;
+    text-shadow: -2px -2px 0 #060606, 2px -2px 0 #060606, -2px 2px 0 #060606, 2px 2px 0 #060606;
+}
+
+
+
+
+p.wp-caption-text {
+    color: #969393;
+    font-weight: bold;
+    font-size: 90%;
+    padding-bottom: 2px;
+    border-bottom: 2px dotted rgb(234, 240, 240)
+}
+
+
