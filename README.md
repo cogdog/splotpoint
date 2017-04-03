@@ -22,6 +22,10 @@ And if you make your own SplotPoint, please please pretty please fork this repo 
 
 If you have problems, feature suggestions, small bags of gold coin for me, please [contact me via the issues area](https://github.com/cogdog/splotpoint/issues) on this repo.
 
+### New Features (details below)
+
+* Shortcodes for generating a full list of slides and a start button to launch the first slide
+
 ## Requirements
 
 I will make a grand assumptive leap in that you have a self hosted Wordpress site and can install themes. Splotpoint is a child theme based on [Intergalactic Theme](https://wordpress.org/themes/intergalactic).
@@ -88,6 +92,22 @@ Publish the page.
 Now launch the Customizer while this page is in view. Open the section for `Static Front Page` and change the option for Front page displays to be `a static page`. From the Front page menu, select the name of the page you just created.
 
 Click `Save & Publish` and marvel at your slick Splotpoint. 
+
+## Shorrcodes
+
+`[slidelist]` generates an ordered list of all slides, can be used in front landing page and/or widgets
+
+`[slidelist count=5]` generates an ordered list of the first 5 slides.
+
+`[slidelist count=5 offset=5]` generates an ordered list of the 5 slides starting at slide 6.
+
+`[startbutton]` inserts a button (styled like slide navigation buttons) to launch the first slide
+
+
+`[startbutton title="go"]` customizes the text on the bitton
+
+
+
 
 
 

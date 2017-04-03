@@ -7,6 +7,8 @@
 */
 
 
+
+
 // ----- SLIDES ARE THE NEW POSTS ----------------------------------------------------
 
 // change name of "posts" to "slides" in the da shboard
@@ -386,12 +388,12 @@ function splotpoint_customize_prettify() {
 	<style>
 	.site-title a {color:<?php echo $site_title_color; ?>;}
 	.site-description {color:<?php echo $site_description_color; ?>;}
-	.post-navigation .nav-previous a , .post-navigation .nav-next a {
+	.post-navigation .nav-previous a, .post-navigation .nav-next a, .start-slides a {
 		background-color:<?php echo $button_color; ?>;
 		border-radius: <?php echo $button_roundness; ?>px;
 	}	
 	.splotpoint-footer a:hover {color:<?php echo $button_color; ?>;}	
-	span.meta-nav {color:<?php echo $icon_color; ?>;}
+	span.meta-nav, .start-slides a {color:<?php echo $icon_color; ?>;}
 	</style>
 	 
 	<?php
@@ -412,6 +414,90 @@ function splotpoint_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'splotpoint_scripts' );
 
+
+# -----------------------------------------------------------------
+# shortcodes
+# -----------------------------------------------------------------
+
+// so they work in widgets
+add_filter('widget_text', 'do_shortcode');
+
+// generate a numbered list of slides
+add_shortcode("startbutton", "splotpoint_startbutton");  
+
+function splotpoint_startbutton( $atts ) {  
+ 	
+ 	// default is to list all slides, but they can be called to start at specified slide
+ 	//    and/or spescified number of slides
+ 	extract( shortcode_atts( array( "title" => "Start"), $atts ) );  
+
+	// WP_Query arguments
+	$args = array(
+		'post_type'              => array( 'post' ),
+		'post_status'            => array( 'publish' ),
+		'posts_per_page'         => 1,
+		'order'                  => 'ASC',
+		'orderby'                => 'menu_order',
+	);
+
+	// The Query
+	$slide_query = new WP_Query( $args );
+	
+	// The Loop
+	if ( $slide_query->have_posts() ) {
+		$out = '<div class="start-slides">';
+		while ( $slide_query->have_posts() ) {
+			$slide_query->the_post();
+			$out.= "\t" . '<a href="' . get_permalink() . '">'  . $title . "</a>\n";
+		}
+		$out.= '</div>';
+		/* Restore original Post Data */
+		wp_reset_postdata();
+	} else {
+		$out = '<p>No slides found.</p>';
+	}
+	
+	return ( $out );
+}
+
+// generate a numbered list of slides
+add_shortcode("slidelist", "splotpoint_slidelist");  
+
+function splotpoint_slidelist( $atts ) {  
+ 	
+ 	// default is to list all slides, but they can be called to start at specified slide
+ 	//    and/or spescified number of slides
+ 	extract( shortcode_atts( array( "count" => -1, "offset" => 0 ), $atts ) );  
+
+	// WP_Query arguments
+	$args = array(
+		'post_type'              => array( 'post' ),
+		'post_status'            => array( 'publish' ),
+		'posts_per_page'         => $count,
+		'offset'                 => $offset,
+		'order'                  => 'ASC',
+		'orderby'                => 'menu_order',
+	);
+
+	// The Query
+	$slide_query = new WP_Query( $args );
+	
+	// The Loop
+	if ( $slide_query->have_posts() ) {
+		$out = '<ol>';
+		while ( $slide_query->have_posts() ) {
+			$slide_query->the_post();
+			$out.= "\t" . '<li><a href="' . get_permalink() . '">'  . get_the_title() . "</a></li>\n";
+		}
+		$out.= '</ol>';
+		/* Restore original Post Data */
+		wp_reset_postdata();
+	} else {
+		$out = '<p>No slides found.</p>';
+	}
+	
+	return ( $out );
+}
 
 # -----------------------------------------------------------------
 # login stuff
