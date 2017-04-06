@@ -16,7 +16,9 @@ I developed a series of custom sites like this initially [while on a fellowship]
 
 ## See It In Action
 
-* [Content With Content](http://show.cogdog.casa/tru-content/) - a presentation at Thompson Rivers University where I bragged about sharing this SPLOT
+* [Open Ed Tech Cooperativism](https://oer17.opened.ca/), BC Open Ed Tech Co-Production, OER 17, April 2017
+* [Content With Content](http://show.cogdog.casa/tru-content/) - Alan Levine, Thompson Rivers University (where I bragged about making this SPLOT), March 2017
+* [GIFs, Memes, and Cool Web Stuff](http://show.cogdog.casa/cool/) - Alan Levine, a presentation at the Universidad del Sagrado Corazón, Feb 2016
 
 And if you make your own SplotPoint, please please pretty please fork this repo to edit this Readme with a link to your spiffy example
 
