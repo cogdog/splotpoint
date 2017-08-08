@@ -40,7 +40,7 @@ I will make a grand assumptive leap in that you have a self hosted Wordpress sit
 
 (3) Install the [Intergalactic theme](https://wordpress.org/themes/intergalactic) directly from the Wordpress dashboard
 
-(4) Install the SplotPoint theme downloaded from this repo as a .zip file; either by uploading to your wp-content/themes directory or by direct FTPing the unzipped files to your wordpress `wp-content/theme`s directory.
+(4) Install the SplotPoint theme [downloaded from this repo as a .zip file](https://github.com/cogdog/splotpoint/archive/master.zip); either by uploading to your wp-content/themes directory or by direct FTPing the unzipped files to your wordpress `wp-content/theme`s directory.
 
 (5) Activate SplotPoint as the site's theme. 
 
@@ -53,17 +53,19 @@ The new site will be pretty plain, Jane. Hang on.
 
 In this theme Wordpress `Posts` are renamed `Slides` -- create maybe 2,3 new ones. In the Post Editor, add your title, a featured image, and use the `Slide Attribute` box on the right to designate the order your slide sits in the deck (this can be edited easily later).
 
+
 ![](images/slide-attributes.jpg "Slide Attributes")
 
-For the body text of all slides, any headings will be center aligned by default.
+For the body text of all slides, all headings will be center aligned by default.
 
-In the Slides (Posts) view they are listed in order of the Slide Attribute.
+In the Slides (Posts) Dasbboard listing, your slides  are listed in order of the Slide Attribute.
  
 ![](images/splotpoint-slides.jpg "Slide Listings")
 
 You can quickly modify titles and slide order via the 'Quick Edit" link that appears when you hover over a slide title.
 
 ## Customizing the Slide deck
+
 Once you have 3 or more slides, you can "pretty" things in the Wordpress Customizer (via the `Customize` link in the Admin toolbar while viewing the site or under `Appearance - Customize` in the Wordpress Dashboard.
 
 When the Customizer launches, click the `SPLOTPoint Prettify section`
@@ -88,7 +90,11 @@ Save your changes. Jump for joy.
 
 The default of your site is a normal blog post listing. Yecch.
 
-Create a new Wordpress Page that will soon become your landing page. Add a title, a description of your presentation, and a hypertext link that will go to the first slide.
+Create a new Wordpress Page that will soon become your landing page. The title will show up in the black bar below the main image you set above. The coptent can be a description of your presentation, your name, etc whatever you want to show up front. 
+
+Use the `[startbutton]` shortcode followed by the `[slidelist]` one to generate a button that launches the slideshow plus a dynamically generated list of links to all slides:
+
+![](images/shortcodes-start.jpg "Shortcodes for front page")
 
 Publish the page.
 
@@ -96,7 +102,7 @@ Now launch the Customizer while this page is in view. Open the section for `Stat
 
 Click `Save & Publish` and marvel at your slick Splotpoint. 
 
-## Shorrcodes
+## Shortcodes
 
 `[slidelist]` generates an ordered list of all slides, can be used in front landing page and/or widgets
 
@@ -105,7 +111,6 @@ Click `Save & Publish` and marvel at your slick Splotpoint.
 `[slidelist count=5 offset=5]` generates an ordered list of the 5 slides starting at slide 6.
 
 `[startbutton]` inserts a button (styled like slide navigation buttons) to launch the first slide
-
 
 `[startbutton title="go"]` customizes the text on the bitton
 
