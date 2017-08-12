@@ -18,10 +18,11 @@ I developed a series of custom sites like this initially [while on a fellowship]
 
 * [Content With Content](http://show.cogdog.casa/tru-content/) - Alan Levine, Thompson Rivers University (where I bragged about making this SPLOT), March 2017
 * [GIFs, Memes, and Cool Web Stuff](http://show.cogdog.casa/cool/) - Alan Levine, a presentation at the Universidad del Sagrado Corazón, Feb 2016
+* [CNIE: Worst Learning Designs](http://cnie17.trubox.ca/)
 * [Open Ed Tech Cooperativism](https://oer17.opened.ca/), BC Open Ed Tech Co-Production, OER 17, April 2017
 * [SPLOT The OER Tools](http://module13.ca/oer-tools/) - JR Dingwall, University of Saskatchewan
 
-And if you make your own SplotPoint, please please pretty please fork this repo to edit this Readme with a link to your spiffy example
+And if you make your own Splotpoint, please please pretty please fork this repo to edit this Readme with a link to your spiffy example (otherwise [we may just Google you and add it anyhow](https://www.google.ca/search?q="SPLOTpoint+Theme")).
 
 If you have problems, feature suggestions, small bags of gold coin for me, please [contact me via the issues area](https://github.com/cogdog/splotpoint/issues) on this repo.
 
