@@ -27,6 +27,7 @@ And if you make your own Splotpoint, please please pretty please fork this repo 
 
 If you have problems, feature suggestions, small bags of gold coin for me, please [contact me via the issues area](https://github.com/cogdog/splotpoint/issues) on this repo.
 
+
 ### New Features (details below)
 
 * Shortcodes for generating a full list of slides and a start button to launch the first slide
@@ -118,6 +119,11 @@ Click `Save & Publish` and marvel at your slick Splotpoint.
 
 
 
+## Updating the Theme
+
+If you have ftp/sftp access to your site (or this can be done in a cpanel file manager), simply upload the new theme files to the `wp-content/themes` directory that includes the older version theme. 
+
+For those that lack direct file upload access or maybe that idea sends shivers down the spine, upload and activate the [Easy Theme and Plugin Upgrades](https://wordpress.org/plugins/easy-theme-and-plugin-upgrades/) plugin -- this will allow you to upload a newer version of a theme as a ZIP archive, the same way you add a theme by uploading.
 
 
 
