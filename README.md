@@ -37,7 +37,7 @@ If you have problems, feature suggestions, small bags of gold coin for me, pleas
 I will make a grand assumptive leap in that you have a self hosted Wordpress site and can install themes. Splotpoint is a child theme based on [Intergalactic Theme](https://wordpress.org/themes/intergalactic).
 
 
-## Setting Up SplotPoint 
+## Setting Up from Scratch
 
 (1) Create a fresh Wordpress site.
 
@@ -51,6 +51,16 @@ The new site will be pretty plain, Jane. Hang on.
 
 ![](images/splotpoint-new.jpg "New SPLOTpoint")
 
+
+## Installing from The Instant Mix
+
+As a new approach for using my themes, I have set up this one as a prebuilt package that includes the theme, initial settings, plugins, and demo content. All you need to be able to do is to install a fresh Wordpress site into the location/domain you want your site.
+
+First [download the Instant Site package file](https://github.com/cogdog/instant-splot/raw/master/noodles/splotpoint-wpress.zip) and expand the file to reveal the single `*.wpress` file.
+
+Then follow the [Instant SPLOT directions for Using a Packaged Kit](https://github.com/cogdog/instant-splot#got-hosting-use-a-packaged-kit) to import into your new site.
+
+Reference the directions below for customizing (but you have all the plugins it needs already installed). 
 
 ## Making Slides
 
