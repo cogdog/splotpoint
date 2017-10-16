@@ -408,8 +408,11 @@ function splotpoint_scripts() {
 	// custom jquery down in the footer you go
 	wp_register_script( 'splotpoint-backstretch' , get_stylesheet_directory_uri() . '/js/jquery.backstretch.min.js', array( 'jquery' ));
 	wp_enqueue_script( 'splotpoint-backstretch' );
-	
-	
+
+	// custom splotpoint jquery
+	wp_register_script( 'splotpoint' , get_stylesheet_directory_uri() . '/js/jquery.splotpoint.js', array( 'jquery' ));
+	wp_enqueue_script( 'splotpoint' );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'splotpoint_scripts' );

@@ -31,7 +31,9 @@ If you have problems, feature suggestions, small bags of gold coin for me, pleas
 
 ### New Features (details below)
 
-* Shortcodes for generating a full list of slides and a start button to launch the first slide
+
+* Oct 16, 2017 Added navigation shortcuts with right, left arrow for slide navigation and up arrow to return to top
+* Aug 7 2017 Shortcodes for generating a full list of slides and a start button to launch the first slide
 
 ## Requirements
 
@@ -52,7 +54,6 @@ The new site will be pretty plain, Jane. Hang on.
 
 ![](images/splotpoint-new.jpg "New SPLOTpoint")
 
-
 ## Installing from The Instant Mix
 
 As a new approach for using my themes, I have set up this one as a prebuilt package that includes the theme, initial settings, plugins, and demo content. All you need to be able to do is to install a fresh Wordpress site into the location/domain you want your site.
@@ -66,7 +67,6 @@ Reference the directions below for customizing (but you have all the plugins it 
 ## Making Slides
 
 In this theme Wordpress `Posts` are renamed `Slides` -- create maybe 2,3 new ones. In the Post Editor, add your title, a featured image, and use the `Slide Attribute` box on the right to designate the order your slide sits in the deck (this can be edited easily later).
-
 
 ![](images/slide-attributes.jpg "Slide Attributes")
 
