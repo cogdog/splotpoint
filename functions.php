@@ -405,6 +405,18 @@ add_action( 'wp_head', 'splotpoint_customize_prettify' );
 
 function splotpoint_scripts() {
 
+	// suit up the parent styles
+    $parent_style = 'intergalactic-style'; 
+    
+    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+    
+    // now the kids
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array( $parent_style ),
+        wp_get_theme()->get('Version')
+    );
+
 	// custom jquery down in the footer you go
 	wp_register_script( 'splotpoint-backstretch' , get_stylesheet_directory_uri() . '/js/jquery.backstretch.min.js', array( 'jquery' ));
 	wp_enqueue_script( 'splotpoint-backstretch' );

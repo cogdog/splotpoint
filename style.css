@@ -2,20 +2,15 @@
 Theme Name: 	SPLOTpoint
 Theme URI: 		http://splot.ca
 Description: 	More modern than your grandfather's slide deck, a presentation maker powered by Wordpress
-Version: 		0.2
+Version: 		0.20
 Template:       intergalactic
 Author: 		CogDog
-Author URI: 	http://cogdogblog.com/
+Author URI: 	https://cog.dog/
 Tags:			splot
 License: 		GNU General Public License v2.0
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html 
 
 */
-
-
-
-@import url(../intergalactic/style.css);
-
 
 h1, h2, h3, h4, h5, h6 {text-align:center;}
 
