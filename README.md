@@ -22,13 +22,13 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [Fork U](http://lab.merelearning.ca/forku/) - Colin Madland, Trinity Western University
 * [GIFs, Memes, and Cool Web Stuff](http://show.cogdog.casa/cool/) - Alan Levine, a presentation at the Universidad del Sagrado Corazón, Feb 2016
 * [Ideas for Work Showing](https://cog.dog/roo/showing-work/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
-* [Mozfest17 Wikipedia Games](https://ammienoot.com/mozfest17/) - Anne-Marie Scott, Edinburgh University, October 2017
+* [Mozfest17 Wikipedia Games](https://ammienoot.com/mozfest17/) - Anne-Marie Scott, University of Edinburgh, October 2017
 * [On Futuring](https://cog.dog/roo/futuring/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
 * [Open Ed Tech Cooperativism](https://oer17.opened.ca/), BC Open Ed Tech Co-Production, OER 17, April 2017
 * [Picture This: Finding, Taking, and Using Photographs](http://picturethis.extendlabs.ca) - Alan Levine, Ontario Extend Summer Institute, August, 2017
 * [SPLOT The OER Tools](http://module13.ca/oer-tools/) - JR Dingwall, University of Saskatchewan
 * [What is Exciting? (according to Alan, YMMV)](https://cog.dog/roo/exciting/)  - Alan Levine, ISS Institute Tour, Australia Nov 2017
-* [Wikipedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/)
+* [Wikipedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/) University of Edinburgh
 
 
 
@@ -39,9 +39,11 @@ If you have problems, feature suggestions, small bags of gold coin for me, pleas
 
 ### New Features (details below)
 
-
 * Oct 16, 2017 Added navigation shortcuts with right, left arrow for slide navigation and up arrow to return to top
 * Aug 7 2017 Shortcodes for generating a full list of slides and a start button to launch the first slide
+
+To be done:
+* Possible experiment as child theme of the newer Intergalactic-2 theme or fold the no longer updated Intergalactic 1.3.2 into Splotpoint.
 
 ## Requirements
 
@@ -52,7 +54,7 @@ I will make a grand assumptive leap in that you have a self hosted Wordpress sit
 
 (1) Create a fresh Wordpress site.
 
-(3) Install the [Intergalactic theme](https://wordpress.org/themes/intergalactic) directly from the Wordpress dashboard
+(3) Download the [Intergalactic theme](https://wordpress.org/themes/intergalactic) as a .zip file. In your dashboard, install it as a new theme by uploading (Wordpress has apparently decided not to make this theme available).
 
 (4) Install the SplotPoint theme [downloaded from this repo as a .zip file](https://github.com/cogdog/splotpoint/archive/master.zip); either by uploading to your wp-content/themes directory or by direct FTPing the unzipped files to your wordpress `wp-content/theme`s directory.
 
