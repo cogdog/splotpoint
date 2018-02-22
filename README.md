@@ -28,7 +28,8 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [Picture This: Finding, Taking, and Using Photographs](http://picturethis.extendlabs.ca) - Alan Levine, Ontario Extend Summer Institute, August, 2017
 * [SPLOT The OER Tools](http://module13.ca/oer-tools/) - JR Dingwall, University of Saskatchewan
 * [What is Exciting? (according to Alan, YMMV)](https://cog.dog/roo/exciting/)  - Alan Levine, ISS Institute Tour, Australia Nov 2017
-* [Wikipedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/) University of Edinburgh
+* [WikiPedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/) University of Edinburgh
+* [WikiData Basics](https://thinking.is.ed.ac.uk/wikidata-basics/) University of Edinburgh
 
 
 
