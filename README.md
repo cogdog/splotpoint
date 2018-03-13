@@ -3,6 +3,14 @@ by Alan Levine http://cog.dog/ or http://cogdogblog.com/
 
 A Wordpress-theme *SPLOT* for presenting the Cool Way (on the web)
 
+-----
+*If this kind of stuff has any value to you, please consider supporting me so I can do more!*
+
+[![Support me on Patreon](http://cogdog.github.io/images/badge-patreon.png)](https://patreon.com/cogdog) [![Support me on via PayPal](http://cogdog.github.io/images/badge-paypal.png)](https://paypal.me/cogdog)
+
+----- 
+
+
 ![](screenshot.png "A SPLOT on the Point")
 
 
@@ -50,7 +58,6 @@ To be done:
 ## Requirements
 
 I will make a grand assumptive leap in that you have a self hosted Wordpress site and can install themes. Splotpoint is a child theme based on [Intergalactic Theme](https://wordpress.org/themes/intergalactic).
-
 
 ## Setting Up from Scratch
 
