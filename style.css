@@ -2,7 +2,7 @@
 Theme Name: 	SPLOTpoint
 Theme URI: 		http://splot.ca
 Description: 	More modern than your grandfather's slide deck, a presentation maker powered by Wordpress
-Version: 		0.20
+Version: 		0.21
 Template:       intergalactic
 Author: 		CogDog
 Author URI: 	https://cog.dog/
@@ -14,7 +14,22 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 
 h1, h2, h3, h4, h5, h6 {text-align:center;}
 
-.site-description { font-size: 1.5em; font-weight: 900; color: rgb(165, 6, 18);}
+.site-title a {
+    color: #fff;
+    text-shadow: -2px -2px 0 #060606, 2px -2px 0 #060606, -2px 2px 0 #060606, 2px 2px 0 #060606;
+}
+
+.home .site-title a {
+    text-shadow: -4px -2px 0 #060606, 2px -2px 0 #060606, -4px 2px 0 #060606, 2px 2px 0 #060606;
+}
+
+
+.site-description { 
+	font-size: 1.5em; 
+	font-weight: 900; 
+	color: rgb(165, 6, 18);
+	text-shadow: -1px -1px 0 #060606, 1px -1px 0 #060606, -1px 1px 0 #060606, 1px 1px 0 #060606;
+}
 
 
 .hentry {
@@ -77,10 +92,6 @@ img.size-big, .wp-caption.caption-big {margin-left: inherit;}
 }
 
 
-.site-title a {
-    color: #fff;
-    text-shadow: -2px -2px 0 #060606, 2px -2px 0 #060606, -2px 2px 0 #060606, 2px 2px 0 #060606;
-}
 
 
 
