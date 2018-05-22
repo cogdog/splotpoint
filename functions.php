@@ -7,6 +7,36 @@
 */
 
 
+// ----- HALLO NEW THEME --------------------------------------------------------------
+
+// run when this theme is activated
+add_action('after_switch_theme', 'splotpoint_setup');
+
+function splotpoint_setup () {
+  
+	// create special pages if they do not exist
+	// backdate creation date 2 days just to make sure they do not end up future dated
+	// which causes all kinds of disturbances in the force
+
+  if (! get_page_by_path( 'all' ) ) {
+  
+  	// create the All Slides  page if it does not exist
+  	$page_data = array(
+  		'post_title' 	=> 'All The Slides',
+  		'post_content'	=> '',
+  		'post_name'		=> 'all',
+  		'post_status'	=> 'publish',
+  		'post_type'		=> 'page',
+  		'post_author' 	=> 1,
+  		'post_date' 	=> date('Y-m-d H:i:s', time() - 172800),
+  		'page_template'	=> 'page-all.php',
+  	);
+  	
+  	wp_insert_post( $page_data );
+  
+  }
+}
+
 
 
 // ----- SLIDES ARE THE NEW POSTS ----------------------------------------------------
@@ -363,9 +393,6 @@ function splotpoint_backstretch() {
 	}
 }
 
-
-
-
 function splotpoint_customize_prettify() {
 
 	// site title color
@@ -416,7 +443,7 @@ function splotpoint_scripts() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
-
+	
 	// custom jquery down in the footer you go
 	wp_register_script( 'splotpoint-backstretch' , get_stylesheet_directory_uri() . '/js/jquery.backstretch.min.js', array( 'jquery' ));
 	wp_enqueue_script( 'splotpoint-backstretch' );

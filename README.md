@@ -41,15 +41,14 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [Wikipedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/) University of Edinburgh
 * [WikiData Basics](https://thinking.is.ed.ac.uk/wikidata-basics/) University of Edinburgh
 
-
-
-And if you make your own Splotpoint, please please pretty please fork this repo to edit this Readme with a link to your spiffy example (otherwise [we may just Google you and add it anyhow](https://www.google.ca/search?q="SPLOTpoint+Theme")).
+And if you make your own Splotpoint, please please pretty please fork this repo to edit this Readme with a link to your spiffy example (otherwise [we may just Google you and add it anyhow](https://www.google.ca/search?q="SPLOTpoint+Theme")). Or leave a message via the issues link below.
 
 If you have problems, feature suggestions, small bags of gold coin for me, please [contact me via the issues area](https://github.com/cogdog/splotpoint/issues) on this repo.
 
 
 ### New Features (details below)
 
+* May 22, 2018 Theme will now generate a `/all` a handouts page that displays all slides in one view with print styles to insert pagebreaks at the end of slides when printed
 * Oct 16, 2017 Added navigation shortcuts with right, left arrow for slide navigation and up arrow to return to top
 * Aug 7 2017 Shortcodes for generating a full list of slides and a start button to launch the first slide
 
@@ -155,11 +154,4 @@ Click `Save & Publish` and marvel at your slick Splotpoint.
 If you have ftp/sftp access to your site (or this can be done in a cpanel file manager), simply upload the new theme files to the `wp-content/themes` directory that includes the older version theme. 
 
 For those that lack direct file upload access or maybe that idea sends shivers down the spine, upload and activate the [Easy Theme and Plugin Upgrades](https://wordpress.org/plugins/easy-theme-and-plugin-upgrades/) plugin -- this will allow you to upload a newer version of a theme as a ZIP archive, the same way you add a theme by uploading.
-
-
-
-
-
-
-
 
