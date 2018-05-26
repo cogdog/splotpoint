@@ -10,7 +10,7 @@ A Wordpress-theme *SPLOT* for presenting the Cool Way (on the web)
 
 ----- 
 
-## Why Do Presentations They Same Way The Have Done it Since the 1908s?
+## Why Do Presentations They Same Way The Have Done it Since the 1980s?
 
 ![](screenshot.png "A SPLOT on the Point")
 
