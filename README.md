@@ -10,11 +10,12 @@ A Wordpress-theme *SPLOT* for presenting the Cool Way (on the web)
 
 ----- 
 
+## Why Do Presentations They Same Way The Have Done it Since the 1908s?
 
 ![](screenshot.png "A SPLOT on the Point")
 
 
-## What is this?
+## When You can Do Presentations as Web Native Content!
 
 ![](images/splotpoint-demo.jpg "Splotpoint Demo")
 
