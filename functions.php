@@ -471,7 +471,7 @@ function splotpoint_startbutton( $atts ) {
  	
  	// default is to list all slides, but they can be called to start at specified slide
  	//    and/or spescified number of slides
- 	extract( shortcode_atts( array( "title" => "Start"), $atts ) );  
+ 	extract( shortcode_atts( array( "title" => "Start", "start" => 0), $atts ) );  
 
 	// WP_Query arguments
 	$args = array(
@@ -481,6 +481,8 @@ function splotpoint_startbutton( $atts ) {
 		'order'                  => 'ASC',
 		'orderby'                => 'menu_order',
 	);
+	
+	if ( $start > 0 ) $args['offset'] = $start - 1;
 
 	// The Query
 	$slide_query = new WP_Query( $args );

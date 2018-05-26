@@ -50,6 +50,8 @@ If you have problems, feature suggestions, small bags of gold coin for me, pleas
 
 ### New Features (details below)
 
+
+* May 26, 2018 Added option to the `startbutton` shortcode to start presentation at a specific slide
 * May 22, 2018 Theme will now generate a `/all` a handouts page that displays all slides in one view with print styles to insert pagebreaks at the end of slides when printed
 * Oct 16, 2017 Added navigation shortcuts with right, left arrow for slide navigation and up arrow to return to top
 * Aug 7 2017 Shortcodes for generating a full list of slides and a start button to launch the first slide
@@ -147,7 +149,9 @@ Click `Save & Publish` and marvel at your slick Splotpoint.
 
 `[startbutton]` inserts a button (styled like slide navigation buttons) to launch the first slide
 
-`[startbutton title="go"]` customizes the text on the bitton
+`[startbutton title="go"]` customizes the text on the button
+
+`[startbutton start="4"]` start the slideshow at slide number 4
 
 
 
