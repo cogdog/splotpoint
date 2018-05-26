@@ -40,6 +40,7 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [What is Exciting? (according to Alan, YMMV)](https://cog.dog/roo/exciting/)  - Alan Levine, ISS Institute Tour, Australia Nov 2017
 * [Wikipedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/) University of Edinburgh
 * [WikiData Basics](https://thinking.is.ed.ac.uk/wikidata-basics/) University of Edinburgh
+* [YouTube for Educators](http://nursekillam.com/youtube/) Laura Killam and Jessica O’Reilly, CNIE 2018
 
 And if you make your own Splotpoint, please please pretty please fork this repo to edit this Readme with a link to your spiffy example (otherwise [we may just Google you and add it anyhow](https://www.google.ca/search?q="SPLOTpoint+Theme")). Or leave a message via the issues link below.
 
