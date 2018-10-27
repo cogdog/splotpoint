@@ -30,6 +30,9 @@ I developed a series of custom sites like this initially [while on a fellowship]
 
 ## See It In Action
 
+* [A 15-Minute Crash Course - Note-Taking](https://create.twu.ca/notetaking101/) Trinity Western University
+* [Adaptive Tools and Creating Accessible Content](https://accessibility.jadin.me/) Taylor Jadin;s workshop at the T3 conference May 2018
+* [An Intro To Domain Of One’s Own](http://coventry.domains/dooo/) Coventry University
 * [CNIE: Worst Learning Designs](http://cnie17.trubox.ca/)
 * [Content With Content](http://show.cogdog.casa/tru-content/) - Alan Levine, Thompson Rivers University (where I bragged about making this SPLOT), March 2017
 * [Doing It Web Style](https://cog.dog/roo/webstyle/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
