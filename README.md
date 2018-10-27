@@ -1,7 +1,7 @@
 # Splotpoint
 by Alan Levine http://cog.dog/ or http://cogdogblog.com/
 
-A Wordpress-theme *SPLOT* for presenting the Cool Way (on the web)
+A Wordpress-theme *SPLOT* for presenting the web way (on the web)
 
 -----
 *If this kind of stuff has any value to you, please consider supporting me so I can do more!*
@@ -10,7 +10,7 @@ A Wordpress-theme *SPLOT* for presenting the Cool Way (on the web)
 
 ----- 
 
-## Why Do Presentations They Same Way The Have Done it Since the 1980s?
+## Why Do Presentations The Same Way It's Been Done Since the 1980s?
 
 ![](screenshot.png "A SPLOT on the Point")
 
