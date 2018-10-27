@@ -10,6 +10,8 @@ A Wordpress-theme *SPLOT* for presenting the web way (on the web)
 
 ----- 
 
+![](most-interesting.jpg "I don't often makde slide decks but when I do it's with SPLOTpoint")
+
 ## Why Do Presentations The Same Way It's Been Done Since the 1980s?
 
 ![](screenshot.png "A SPLOT on the Point")
@@ -22,6 +24,9 @@ A Wordpress-theme *SPLOT* for presenting the web way (on the web)
 This Wordpress Theme powers a site that can be used to deliver presentations on the web, without any residue of commercial slideware. Your presentations not only look good, they also become the reference resource (e.g. additional links and info)
 
 I developed a series of custom sites like this initially [while on a fellowship](http://cogdog.trubox.ca) at [Thompson Rivers University](http://tru.ca/) and has now been generalized as part of the collection of [SPLOT tools](http://splot.ca/).
+
+
+
 
 ## See It In Action
 
