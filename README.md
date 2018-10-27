@@ -10,7 +10,7 @@ A Wordpress-theme *SPLOT* for presenting the web way (on the web)
 
 ----- 
 
-![](most-interesting.jpg "I don't often makde slide decks but when I do it's with SPLOTpoint")
+![](images/most-interesting.jpg "I don't often makde slide decks but when I do it's with SPLOTpoint")
 
 ## Why Do Presentations The Same Way It's Been Done Since the 1980s?
 
