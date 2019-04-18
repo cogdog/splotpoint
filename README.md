@@ -47,6 +47,7 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [Blogging to Build your Professional Profile](https://thinking.is.ed.ac.uk/professional-blogging/) Lorna M. Campbell, University of Edinburgh
 * [CNIE: Worst Learning Designs](http://cnie17.trubox.ca/)
 * [Content With Content](http://show.cogdog.casa/tru-content/) - Alan Levine, Thompson Rivers University (where I bragged about making this SPLOT), March 2017
+* [Digital + ](http://show.cogdog.casa/digital/) - Alan Levine, ECS100 talk, University of Regina, Mar, 2019
 * [Doing It Web Style](https://cog.dog/roo/webstyle/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
 * [Fork U](http://lab.merelearning.ca/forku/) - Colin Madland, Trinity Western University
 * [The Good, The Web, and The PowerPoint](http://connectedcourses.stateu.org/demo/goodbad/) - demo
@@ -54,10 +55,13 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [Ideas for Work Showing](https://cog.dog/roo/showing-work/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
 * [Mozfest17 Wikipedia Games](https://ammienoot.com/mozfest17/) - Anne-Marie Scott, University of Edinburgh, October 2017
 * The [NetNarr GIF Reader](http://gif.arganee.world/) - Alan Levine, Networked Narratives Class, Feb 2018
+* [Not So Stupid WordPress Tricks](http://show.cogdog.casa/pressed19/) - Alan Levine, 2019 PressEd Conference, Apr 2019
 * [On Futuring](https://cog.dog/roo/futuring/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
 * [Open Ed Tech Cooperativism](https://oer17.opened.ca/), BC Open Ed Tech Co-Production, OER 17, April 2017
+* [The 'Pedia and Beyond](https://muraludg.org/pedia/), Mural UDG Project, Guadalajara, March 2018
 * [Picture This: Finding, Taking, and Using Photographs](http://picturethis.extendlabs.ca) - Alan Levine, Ontario Extend Summer Institute, August, 2017
 * [SPLOT The OER Tools](http://module13.ca/oer-tools/) - JR Dingwall, University of Saskatchewan
+* [UMASS Create](https://samanderson.umasscreate.net/present/) - A Web Domains Pilot at UMass Amherst
 * [What is Exciting? (according to Alan, YMMV)](https://cog.dog/roo/exciting/)  - Alan Levine, ISS Institute Tour, Australia Nov 2017
 * [Wikipedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/) - Anne-Marie Scott & Ewan McAndrew, University of Edinburgh
 * [WikiData Basics](https://thinking.is.ed.ac.uk/wikidata-basics/) - Ewan McAndrew, University of Edinburgh
