@@ -53,6 +53,7 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [The Good, The Web, and The PowerPoint](http://connectedcourses.stateu.org/demo/goodbad/) - demo
 * [GIFs, Memes, and Cool Web Stuff](http://show.cogdog.casa/cool/) - Alan Levine, a presentation at the Universidad del Sagrado Corazón, Feb 2016
 * [Ideas for Work Showing](https://cog.dog/roo/showing-work/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
+* [Ingredients for a Successful Online Class](https://module13.ca/ingredients/) - JR Dingwall
 * [Mozfest17 Wikipedia Games](https://ammienoot.com/mozfest17/) - Anne-Marie Scott, University of Edinburgh, October 2017
 * The [NetNarr GIF Reader](http://gif.arganee.world/) - Alan Levine, Networked Narratives Class, Feb 2018
 * [Not So Stupid WordPress Tricks](http://show.cogdog.casa/pressed19/) - Alan Levine, 2019 PressEd Conference, Apr 2019
