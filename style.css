@@ -1,16 +1,19 @@
 /*
-Theme Name: 	SPLOTpoint
-Theme URI: 		http://splot.ca
-Description: 	More modern than your grandfather's slide deck, a presentation maker powered by Wordpress
-Version: 		0.4
+Theme Name:     SPLOTpoint
+Theme URI:      http://splot.ca
+Description:    More modern than your grandfather's slide deck, a presentation maker powered by Wordpress
+Version:        0.5
 Template:       intergalactic
-Author: 		CogDog
-Author URI: 	https://cog.dog/
-Tags:			splot
-License: 		GNU General Public License v2.0
-License URI: 	http://www.gnu.org/licenses/gpl-2.0.html 
-
+Author:         CogDog
+Author URI:     https://cog.dog/
+Tags:          splot
+License:       GNU General Public License v2.0
+License URI: 	 http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+body {
+  background-color:#000;
+}
 
 h1, h2, h3, h4, h5, h6 {text-align:center;}
 
@@ -24,9 +27,9 @@ h1, h2, h3, h4, h5, h6 {text-align:center;}
 }
 
 
-.site-description { 
-	font-size: 1.5em; 
-	font-weight: 900; 
+.site-description {
+	font-size: 1.5em;
+	font-weight: 900;
 	color: rgb(165, 6, 18);
 	text-shadow: -1px -1px 0 #060606, 1px -1px 0 #060606, -1px 1px 0 #060606, 1px 1px 0 #060606;
 }
@@ -38,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {text-align:center;}
 .entry-content {
 	width:90%;
 	font-size:1.3em;
+  padding-top: 2em;
+}
+
+
 }
 
 .entry-content-wrapper {
@@ -102,5 +109,5 @@ p.wp-caption-text {
 /* Print Styles for all slides pages */
 	@media print {
 		body { background:white; color:black; margin:0; }
-		.site-branding, .menu-toggle, .slide-menu, .entry-footer-wrapper, footer#colophon {display: none;} 
+		.site-branding, .menu-toggle, .slide-menu, .entry-footer-wrapper, footer#colophon {display: none;}
 	}
