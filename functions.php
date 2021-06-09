@@ -35,6 +35,8 @@ function splotpoint_setup () {
   	wp_insert_post( $page_data );
 
   }
+
+  flush_rewrite_rules();
 }
 
 
@@ -190,6 +192,81 @@ function splotpoint_columns($columns) {
 
     return $splotpoint_columns;
 }
+
+
+// ----- GIVE ME RANDOM OR .... ----------------------------------------------------
+
+// -----  add allowable url parameters
+add_filter('query_vars', 'splotpoint_queryvars' );
+
+function splotpoint_queryvars( $qvars ) {
+	$qvars[] = 'random'; // random flag
+	return $qvars;
+}
+
+/* set up rewrite rules */
+add_action('init','splotpoint_rewrite_rules');
+
+function splotpoint_rewrite_rules() {
+	// for sending to random item
+   add_rewrite_rule('random/?$', 'index.php?random=1', 'top');
+}
+
+/* handle redirects */
+
+add_action( 'template_redirect', 'splotpoint_write_director' );
+
+function splotpoint_write_director() {
+  if ( get_query_var('random') == 1 ) {
+		 // set arguments for WP_Query on published posts to get 1 at random
+		$args = array(
+			'post_type' => 'post',
+			'post_status' => 'publish',
+			'posts_per_page' => 1,
+			'orderby' => 'rand'
+		);
+
+		// It's time! Go someplace random
+		$my_random_post = new WP_Query ( $args );
+
+		while ( $my_random_post->have_posts () ) {
+		  $my_random_post->the_post ();
+
+		  // redirect to the random post
+		  wp_redirect ( get_permalink () );
+		  exit;
+		}
+	}
+}
+
+
+// prevent posts from being saved to /random (reserved for random post generator
+
+add_action( 'save_post', 'splot_save_post_random_check' );
+
+function splot_save_post_random_check( $post_id ) {
+    // verify post is not a revision and that the post slug is "random"
+
+    $new_post = get_post( $post_id );
+    if ( ! wp_is_post_revision( $post_id ) and  $new_post->post_name == 'random' ) {
+
+
+        // unhook this function to prevent infinite looping
+        remove_action( 'save_post', 'splot_save_post_random_check' );
+
+        // update the post slug
+        wp_update_post( array(
+            'ID' => $post_id,
+            'post_name' => 'randomly' // do your thing here
+        ));
+
+        // re-hook this function
+        add_action( 'save_post', 'splot_save_post_random_check' );
+
+    }
+}
+
+
 
 // ----- NAVIGATING THE WATERS ----------------------------------------------------
 
