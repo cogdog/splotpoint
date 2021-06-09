@@ -59,7 +59,11 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [Open Ed Tech Cooperativism](https://oer17.opened.ca/), BC Open Ed Tech Co-Production, OER 17, April 2017
 * [The 'Pedia and Beyond](https://muraludg.org/pedia/), Mural UDG Project, Guadalajara, March 2018
 * [Picture This: Finding, Taking, and Using Photographs](http://picturethis.extendlabs.ca) - Alan Levine, Ontario Extend Summer Institute, August, 2017
+* [Practable](https://beardyprof.com/practable/) Non-Traditional Practical Work for Everyone - Tim Drysdale
+* [SEO: Search Engine Optimization for personal websites](https://slides.jadin.me/seo/) - Taylor Jardin
+* [Social Annotation](https://social.techforteaching.ca/blog/) Reading Out Loud by Jesslyn Wilkinson
 * [SPLOT The OER Tools](http://module13.ca/oer-tools/) - JR Dingwall, University of Saskatchewan
+* [SPLOTS? HUH?](https://cte.openlcc.net/courses/splots/) - A CTE NOOC about SPLOTS! by Jim Luke
 * [UMASS Create](https://samanderson.umasscreate.net/present/) - A Web Domains Pilot at UMass Amherst
 * [What is Exciting? (according to Alan, YMMV)](https://cog.dog/roo/exciting/)  - Alan Levine, ISS Institute Tour, Australia Nov 2017
 * [Wikipedia Basics](https://thinking.is.ed.ac.uk/wiki-basics/) - Anne-Marie Scott & Ewan McAndrew, University of Edinburgh
