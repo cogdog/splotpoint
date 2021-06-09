@@ -33,11 +33,7 @@ SPLOTPoint was inspired by web-based presentations created during [Thompson Rive
 
 [![Thompson Rivers University](https://cogdog.github.io/images/tru.jpg)](https://tru.ca)  [![Reclaim Hosting](https://cogdog.github.io/images/reclaim.jpg)](https://reclaimhosting.com) [![OpenETC](https://cogdog.github.io/images/openetc.jpg)](https://opened.ca)   [![Supporters on Patreon](https://cogdog.github.io/images/patreon.jpg)](https://patreon.com/cogdog) 
 
-
 I developed a series of custom sites like this initially [while on a fellowship](http://cogdog.trubox.ca) at [Thompson Rivers University](http://tru.ca/) and has now been generalized as part of the collection of [SPLOT tools](http://splot.ca/).
-
-
-
 
 ## See It In Action
 
@@ -50,6 +46,7 @@ I developed a series of custom sites like this initially [while on a fellowship]
 * [Content With Content](http://show.cogdog.casa/tru-content/) - Alan Levine, Thompson Rivers University (where I bragged about making this SPLOT), March 2017
 * [Digital + ](http://show.cogdog.casa/digital/) - Alan Levine, ECS100 talk, University of Regina, Mar, 2019
 * [Doing It Web Style](https://cog.dog/roo/webstyle/) - Alan Levine, ISS Institute Tour, Australia Nov 2017
+* [EDUPUNK, EDUBAUHAUS, D.I.O?](http://udg.theagoraonline.net/ciinovapp/)
 * [Fork U](http://lab.merelearning.ca/forku/) - Colin Madland, Trinity Western University
 * [The Good, The Web, and The PowerPoint](http://connectedcourses.stateu.org/demo/goodbad/) - demo
 * [GIFs, Memes, and Cool Web Stuff](http://show.cogdog.casa/cool/) - Alan Levine, a presentation at the Universidad del Sagrado Corazón, Feb 2016
@@ -75,47 +72,53 @@ And if you make your own Splotpoint, please please pretty please fork this repo 
 
 If you have problems, feature suggestions, small bags of gold coin for me, please [contact me via the issues area](https://github.com/cogdog/splotpoint/issues) on this repo.
 
-
-### New Features (details below)
-
-
-* May 26, 2018 Added option to the `startbutton` shortcode to start presentation at a specific slide
-* May 22, 2018 Theme will now generate a `/all` a handouts page that displays all slides in one view with print styles to insert pagebreaks at the end of slides when printed
-* Oct 16, 2017 Added navigation shortcuts with right, left arrow for slide navigation and up arrow to return to top
-* Aug 7 2017 Shortcodes for generating a full list of slides and a start button to launch the first slide
-
-To be done:
-* Possible experiment as child theme of the newer Intergalactic-2 theme or fold the no longer updated Intergalactic 1.3.2 into Splotpoint.
-
 ## Requirements
 
 I will make a grand assumptive leap in that you have a self hosted Wordpress site and can install themes. Splotpoint is a child theme based on [Intergalactic Theme](https://wordpress.org/themes/intergalactic).
 
-## Setting Up from Scratch
 
-(1) Create a fresh Wordpress site.
+## Installing SPLOTpoint
 
-(3) Download the [Intergalactic theme](https://wordpress.org/themes/intergalactic) as a .zip file. In your dashboard, install it as a new theme by uploading (Wordpress has apparently decided not to make this theme available).
+Using this theme requires a self-hosted--or institutionally hosted (lucky you)-- Wordpress site (the kind that you download from [wordpress.org](http://www.wordpress.org). You cannot use this theme on the free "wordpress.com" site unless you have a business plan. Maybe check out [Reclaim Hosting](https://reclaimhosting.com/) if you choose to set up your own hosting space. 
 
-(4) Install the SplotPoint theme [downloaded from this repo as a .zip file](https://github.com/cogdog/splotpoint/archive/master.zip); either by uploading to your wp-content/themes directory or by direct FTPing the unzipped files to your wordpress `wp-content/theme`s directory.
+SPLOTpoint is a child theme based on [Intergalactic theme](https://wordpress.org/themes/intergalactic). Install this theme first from within the Wordpress Dashboard under **Appearance** -- **Themes** searching on `Intergalactic`.
 
-(5) Activate SplotPoint as the site's theme. 
+### Installing SPLOTpoint from Scratch
 
-The new site will be pretty plain, Jane. Hang on.
+You can download a ZIP file of this theme via the green **Code*" button above (use the Download Zip option). 
+
+The zip can be uploaded directly to your site via **Themes** in the Wordpress dashboard, then **Add Theme** and finally **Upload Theme**. If you run into size upload limits or just prefer going old school like me, unzip the package and ftp the entire folder into your `wp-content/themes` directory.
+
+### Updating SPLOTpoint (manually)
+
+As of WordPress version 5.5, themes uploaded as .ZIP files can now be updated the same way you installed it. Just download the newest version, and update it by going to **Themes** in the Wordpress dashboard, then **Add Theme** and finally **Upload Theme**. You will be asked to confirm updating the theme with the newer version.  
+
+### Installing SPLOTpoint in One Click with WP Pusher (get automatic updates!)
+
+To have your site stay up to date automatically, I recommend trying the [WP Pusher plugin](https://wppusher.com/) which makes it easier to install themes and plugins that are published in GitHub. It takes a few steps to set up, but it's the most direct way to get updates to the theme.
+
+To use WP-Pusher you will need to have or create an account on [GitHub](https://github.com/) (free). Log in. 
+
+Next [download WP Pusher plugin](https://wppusher.com/download) as a ZIP file. From the plugins area of your Wordpress dashboard, click the **Upload Plugin** button, select that zip file to upload, and activate the plugin.
+
+Then click the **WP Pusher** option in your Wordpress Dashboard, and then click the **GitHub** tab. Next click the **Obtain a GitHub Token** button to get an authentication token. Copy the one that is generated, paste into the field for it, and finally, click **Save GitHub** Token.
+
+Now you are ready to install SPLOTpoint! 
+
+![](images/wp-pusher.jpg "WP Pusher Settings")
+
+Look under **WP Pusher** for **Install Theme**. In the form that appears, under **Theme Repository**, enter `cogdog/splotpoint`. Also check the option for **Push-to-Deploy** (this will automatically update your site when the theme is updated) finally, click **Install Theme**.
+
+Woah Neo?
+
+Not only does this install the theme without any messy download/uploads, each time I update the theme on GitHub, your site will be automatically updated to the newest version.  
+
+## Loosely Referred to as Documentation
+
 
 ![](images/splotpoint-new.jpg "New SPLOTpoint")
 
-## Installing from The Instant Mix
-
-As a new approach for using my themes, I have set up this one as a prebuilt package that includes the theme, initial settings, plugins, and demo content. All you need to be able to do is to install a fresh Wordpress site into the location/domain you want your site.
-
-First [download the Instant Site package file](https://github.com/cogdog/instant-splot/raw/master/noodles/splotpoint-wpress.zip) and expand the file to reveal the single `*.wpress` file.
-
-Then follow the [Instant SPLOT directions for Using a Packaged Kit](https://github.com/cogdog/instant-splot#got-hosting-use-a-packaged-kit) to import into your new site.
-
-Reference the directions below for customizing (but you have all the plugins it needs already installed). 
-
-## Making Slides
+### Making Slides
 
 In this theme Wordpress `Posts` are renamed `Slides` -- create maybe 2,3 new ones. In the Post Editor, add your title, a featured image, and use the `Slide Attribute` box on the right to designate the order your slide sits in the deck (this can be edited easily later).
 
@@ -129,11 +132,11 @@ In the Slides (Posts) Dasbboard listing, your slides  are listed in order of the
 
 You can quickly modify titles and slide order via the 'Quick Edit" link that appears when you hover over a slide title.
 
-## Customizing the Slide deck
+### Customizing the Slide deck
 
 Once you have 3 or more slides, you can "pretty" things in the Wordpress Customizer (via the `Customize` link in the Admin toolbar while viewing the site or under `Appearance - Customize` in the Wordpress Dashboard.
 
-When the Customizer launches, click the `SPLOTPoint Prettify section`
+When the Customizer launches, click the `SPLOTPoint Prettify` section
 
 ![](images/customizer1.jpg "Customizer First View")
 
@@ -151,7 +154,7 @@ Here you can edit the color of the buttons and edit the text displayed in the fo
 
 Save your changes. Jump for joy.
 
-## Create a Landing Page
+### Create a Landing Page
 
 The default of your site is a normal blog post listing. Yecch.
 
@@ -167,7 +170,7 @@ Now launch the Customizer while this page is in view. Open the section for `Stat
 
 Click `Save & Publish` and marvel at your slick Splotpoint. 
 
-## Shortcodes
+## All Shortcodes
 
 `[slidelist]` generates an ordered list of all slides, can be used in front landing page and/or widgets
 
@@ -181,11 +184,11 @@ Click `Save & Publish` and marvel at your slick Splotpoint.
 
 `[startbutton start="4"]` start the slideshow at slide number 4
 
+### New Features (details below)
 
-
-## Updating the Theme
-
-If you have ftp/sftp access to your site (or this can be done in a cpanel file manager), simply upload the new theme files to the `wp-content/themes` directory that includes the older version theme. 
-
-For those that lack direct file upload access or maybe that idea sends shivers down the spine, upload and activate the [Easy Theme and Plugin Upgrades](https://wordpress.org/plugins/easy-theme-and-plugin-upgrades/) plugin -- this will allow you to upload a newer version of a theme as a ZIP archive, the same way you add a theme by uploading.
+* June 9, 2021 Button code better on small screens, adjusted entry width to fill better for embedded videoå
+* May 26, 2018 Added option to the `startbutton` shortcode to start presentation at a specific slide
+* May 22, 2018 Theme will now generate a `/all` a handouts page that displays all slides in one view with print styles to insert pagebreaks at the end of slides when printed
+* Oct 16, 2017 Added navigation shortcuts with right, left arrow for slide navigation and up arrow to return to top
+* Aug 7 2017 Shortcodes for generating a full list of slides and a start button to launch the first slide
 

@@ -1,8 +1,8 @@
 <?php
 /* Functions and stuff for SPLOTpoint theme
-   
+
    a friendly little child of Intergalactic
-   
+
    mods by and blame go to http://cog.dog
 */
 
@@ -13,13 +13,13 @@
 add_action('after_switch_theme', 'splotpoint_setup');
 
 function splotpoint_setup () {
-  
+
 	// create special pages if they do not exist
 	// backdate creation date 2 days just to make sure they do not end up future dated
 	// which causes all kinds of disturbances in the force
 
   if (! get_page_by_path( 'all' ) ) {
-  
+
   	// create the All Slides  page if it does not exist
   	$page_data = array(
   		'post_title' 	=> 'All The Slides',
@@ -31,9 +31,9 @@ function splotpoint_setup () {
   		'post_date' 	=> date('Y-m-d H:i:s', time() - 172800),
   		'page_template'	=> 'page-all.php',
   	);
-  	
+
   	wp_insert_post( $page_data );
-  
+
   }
 }
 
@@ -48,9 +48,9 @@ add_action( 'init', 'splotpoint_change_post_object' );
 function splotpoint_change_post_label() {
     global $menu;
     global $submenu;
-    
+
     $daily_blank_thing = 'Slide';
-    
+
     $menu[5][0] = $daily_blank_thing . 's';
     $submenu['edit.php'][5][0] = 'All ' . $daily_blank_thing . 's';
     $submenu['edit.php'][10][0] = 'Add ' . $daily_blank_thing;
@@ -144,10 +144,10 @@ add_filter( 'get_next_post_sort', 'my_next_post_sort' );
 
 // h/t http://wordpress.stackexchange.com/questions/66455/how-to-change-order-of-posts-in-admin
 function custom_post_order($query){
-    /* 
+    /*
         Set post types.
-        _builtin => true returns WordPress default post types. 
-        _builtin => false returns custom registered post types. 
+        _builtin => true returns WordPress default post types.
+        _builtin => false returns custom registered post types.
     */
     $post_types = get_post_types(array('_builtin' => true), 'names');
     /* The current post type. */
@@ -178,16 +178,16 @@ add_filter('manage_posts_columns', 'splotpoint_columns');
 
 function splotpoint_columns($columns) {
 
-	$splotpoint_columns = array(); 
+	$splotpoint_columns = array();
 
-	foreach( $columns as $key => $value) { 
-		
-		if ( $key != 'date' and $key != 'categories' ) $splotpoint_columns[$key] = $value; 
-		if ( $key== 'title' ) { 
+	foreach( $columns as $key => $value) {
+
+		if ( $key != 'date' and $key != 'categories' ) $splotpoint_columns[$key] = $value;
+		if ( $key== 'title' ) {
 			$splotpoint_columns['order'] = ' Slide Order';
-		} 
+		}
 	}
-	
+
     return $splotpoint_columns;
 }
 
@@ -246,8 +246,9 @@ function splotpoint_register_theme_customizer( $wp_customize ) {
 	// add the section to contain the settings
 	$wp_customize->add_section( 'slide_buttons' , array(
 		'title' =>  'SPLOTpoint Prettify',
+		'priority'       => 25,
 	) );
-	
+
 
 
 	// add section for custom logo
@@ -256,11 +257,11 @@ function splotpoint_register_theme_customizer( $wp_customize ) {
 	// Add setting for footer
 	$wp_customize->add_setting( 'site_title_background', array(
 		 'default'           => __( '', 'intergalactic' ),
-		 'type' => 'option', 
+		 'type' => 'option',
 		  'capability' =>  'edit_theme_options'
-	) );     
+	) );
 
-	
+
 	// add controller for logo
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'slide_title_background', array(
 		'label'    => __( 'Slide Title Background Image', 'intergalactic' ),
@@ -269,53 +270,53 @@ function splotpoint_register_theme_customizer( $wp_customize ) {
 ) ) );
 
 
-	// title  color 
+	// title  color
 	$btncolors[] = array(
-		'slug'=>'site_title_color', 
+		'slug'=>'site_title_color',
 		'default' => '#000',
 		'label' => 'Title Text Color'
 	);
- 
- 	// title  color 
+
+ 	// title  color
 	$btncolors[] = array(
-		'slug'=>'site_description_color', 
+		'slug'=>'site_description_color',
 		'default' => '#29215A',
 		'label' => 'Title Tagline Color'
 	);
-	
-	
-	// button  color 
+
+
+	// button  color
 	$btncolors[] = array(
-		'slug'=>'button_color', 
+		'slug'=>'button_color',
 		'default' => '#fff',
 		'label' => 'Button Color'
 	);
- 
+
 	// icon color
 	$btncolors[] = array(
-		'slug'=>'icon_color', 
+		'slug'=>'icon_color',
 		'default' => '#000',
 		'label' => 'Button Icon Color'
 	);
-	
+
 	// add the settings and controls for each color
 	foreach( $btncolors as $btncolor ) {
- 
+
 		// SETTINGS
 		$wp_customize->add_setting(
 			$btncolor['slug'], array(
 				'default' => $btncolor['default'],
-				'type' => 'option', 
+				'type' => 'option',
 				'capability' =>  'edit_theme_options'
 			)
 		);
-		
+
 		// CONTROLS
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(
 				$wp_customize,
-				$btncolor['slug'], 
-				array('label' => $btncolor['label'], 
+				$btncolor['slug'],
+				array('label' => $btncolor['label'],
 				'section' => 'slide_buttons',
 				'settings' => $btncolor['slug'])
 			)
@@ -327,10 +328,10 @@ function splotpoint_register_theme_customizer( $wp_customize ) {
 	// Add setting for footer
 	$wp_customize->add_setting( 'button_roundness', array(
 		 'default'           => __( '0', 'intergalactic' ),
-		 'type' => 'option', 
+		 'type' => 'option',
 		  'capability' =>  'edit_theme_options'
-	) );     
-     
+	) );
+
      $wp_customize->add_control( 'button_roundness', array(
 		  'type' => 'range',
 		  'section' => 'slide_buttons',
@@ -342,14 +343,14 @@ function splotpoint_register_theme_customizer( $wp_customize ) {
 			'step' => 5,
 		  ),
 		) );
- 
- 
+
+
  	// Add setting for footer
 	$wp_customize->add_setting( 'footer_text_block', array(
 		 'default'           => __( get_bloginfo( 'name' ) . ' : ' . get_bloginfo( 'description' ) , 'intergalactic' ),
 		 'sanitize_callback' => 'sanitize_text'
 	) );
-	
+
 	// Add control for footer
 	$wp_customize->add_control( new WP_Customize_Control(
 	    $wp_customize,
@@ -363,12 +364,12 @@ function splotpoint_register_theme_customizer( $wp_customize ) {
 	    )
 	);
 
-    
+
   	// Sanitize text
 	function sanitize_text( $text ) {
 	    return sanitize_text_field( $text );
 	}
-    
+
 }
 
 function splotpoint_footer_text() {
@@ -384,9 +385,9 @@ function splotpoint_backstretch() {
 	// Add to footer the jquery command to backstretch the background image
 
 	$site_title_background = get_option( 'site_title_background' );
-	
+
 	if ( is_page() or is_home() and $site_title_background ) {
-		echo 
+		echo
 '<script>
 	jQuery("#masthead").backstretch("' .$site_title_background . '");
 </script>';
@@ -397,20 +398,20 @@ function splotpoint_customize_prettify() {
 
 	// site title color
 	$site_title_color= get_option( 'site_title_color' );
-	
+
 	// site description color
 	$site_description_color= get_option( 'site_description_color' );
 
 	// button color
 	$button_color = get_option( 'button_color' );
- 
+
 	// icon color
-	$icon_color = get_option( 'icon_color' ); 
-	
+	$icon_color = get_option( 'icon_color' );
+
 	// button roundness
-	$button_roundness = get_option( 'button_roundness' ); 
-	
-	// styling! 
+	$button_roundness = get_option( 'button_roundness' );
+
+	// styling!
 	?>
 	<style>
 	.site-title a {color:<?php echo $site_title_color; ?>;}
@@ -418,32 +419,32 @@ function splotpoint_customize_prettify() {
 	.post-navigation .nav-previous a, .post-navigation .nav-next a, .start-slides a {
 		background-color:<?php echo $button_color; ?>;
 		border-radius: <?php echo $button_roundness; ?>px;
-	}	
-	.splotpoint-footer a:hover {color:<?php echo $button_color; ?>;}	
+	}
+	.splotpoint-footer a:hover {color:<?php echo $button_color; ?>;}
 	span.meta-nav, .start-slides a {color:<?php echo $icon_color; ?>;}
 	</style>
-	 
+
 	<?php
 }
 add_action( 'wp_head', 'splotpoint_customize_prettify' );
 
 
-// enqueue the jQuery Backstretch plugin
+// enqueue the jQuery Backstretch plugin and more
 
 function splotpoint_scripts() {
 
 	// suit up the parent styles
-    $parent_style = 'intergalactic-style'; 
-    
+    $parent_style = 'intergalactic-style';
+
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    
+
     // now the kids
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
-	
+
 	// custom jquery down in the footer you go
 	wp_register_script( 'splotpoint-backstretch' , get_stylesheet_directory_uri() . '/js/jquery.backstretch.min.js', array( 'jquery' ));
 	wp_enqueue_script( 'splotpoint-backstretch' );
@@ -465,13 +466,13 @@ add_action( 'wp_enqueue_scripts', 'splotpoint_scripts' );
 add_filter('widget_text', 'do_shortcode');
 
 // generate a numbered list of slides
-add_shortcode("startbutton", "splotpoint_startbutton");  
+add_shortcode("startbutton", "splotpoint_startbutton");
 
-function splotpoint_startbutton( $atts ) {  
- 	
+function splotpoint_startbutton( $atts ) {
+
  	// default is to list all slides, but they can be called to start at specified slide
  	//    and/or spescified number of slides
- 	extract( shortcode_atts( array( "title" => "Start", "start" => 0), $atts ) );  
+ 	extract( shortcode_atts( array( "title" => "Start", "start" => 0), $atts ) );
 
 	// WP_Query arguments
 	$args = array(
@@ -481,12 +482,12 @@ function splotpoint_startbutton( $atts ) {
 		'order'                  => 'ASC',
 		'orderby'                => 'menu_order',
 	);
-	
+
 	if ( $start > 0 ) $args['offset'] = $start - 1;
 
 	// The Query
 	$slide_query = new WP_Query( $args );
-	
+
 	// The Loop
 	if ( $slide_query->have_posts() ) {
 		$out = '<div class="start-slides">';
@@ -500,18 +501,18 @@ function splotpoint_startbutton( $atts ) {
 	} else {
 		$out = '<p>No slides found.</p>';
 	}
-	
+
 	return ( $out );
 }
 
 // generate a numbered list of slides
-add_shortcode("slidelist", "splotpoint_slidelist");  
+add_shortcode("slidelist", "splotpoint_slidelist");
 
-function splotpoint_slidelist( $atts ) {  
- 	
+function splotpoint_slidelist( $atts ) {
+
  	// default is to list all slides, but they can be called to start at specified slide
  	//    and/or spescified number of slides
- 	extract( shortcode_atts( array( "count" => -1, "offset" => 0 ), $atts ) );  
+ 	extract( shortcode_atts( array( "count" => -1, "offset" => 0 ), $atts ) );
 
 	// WP_Query arguments
 	$args = array(
@@ -525,7 +526,7 @@ function splotpoint_slidelist( $atts ) {
 
 	// The Query
 	$slide_query = new WP_Query( $args );
-	
+
 	// The Loop
 	if ( $slide_query->have_posts() ) {
 		$out = '<ol>';
@@ -539,7 +540,7 @@ function splotpoint_slidelist( $atts ) {
 	} else {
 		$out = '<p>No slides found.</p>';
 	}
-	
+
 	return ( $out );
 }
 
@@ -556,7 +557,7 @@ function my_login_logo() { ?>
         body.login div#login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/site-login-logo.png);
             padding-bottom: 30px;
-        }    
+        }
 	#backtoblog {display:none;}
 	#nav {display:none;}
     </style>
